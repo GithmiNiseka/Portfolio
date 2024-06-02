@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Githmi De Silva</div>
+      <div>
+        <ul class="nav-links" style="position: relative;left: 100px;" >
+          <li><a href="#about">About</a></li>
+        
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Githmi De Silva</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Githmi De Silva</h1>
+        <p class="section__text__p2">UI/UX Engineer & Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/UIUX CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/githmi-de-silva-802084222/"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/GithmiNiseka"
+          />
+          <img
+          src="./assets/medium.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://medium.com/@2020is026"
+        />
+        <img
+        src="./assets/behance.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="location.href='https://www.behance.net/githmidesilva"
+      />
+        </div>
+      </div>
+    </section>
+    <!-- <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+  
+          <div class="about-containers">
+            <div class="section-container">
+              <div class="section__pic-container">
+                <img
+                  src="./assets/about-pic.png"
+                  alt="Profile picture"
+                  class="about-pic"
+                />
+              </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3 Months <br />Farmoid Robotech(PVT)LTD</p>
+             <p>UI/UX Designer Intern</p> 
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6 Months <br />WSO2 Inc</p>
+              <p>UI/UX Engineer Intern</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc.(Hons) in Information Systems<br />University of Colombo School Of Computing</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Completed upto Management Level (2 Levels) of CIMA</p>
+            </div>
+          </div>
+          
+        </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section> -->
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#about'"
+      />
+    </section>
+    <section id="about" style="position: relative;left:100px;">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+     
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Experienced</p>
+                </div>
+                
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+                
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Boostrap</h3>
+                  <p>Intermediate</p>
+                </div>
+                
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Next Js</h3>
+                  <p>Intermediate</p>
+                </div>
+                
+              </article>
+            </div>
+          </div>
+        
+            <div class="about-details-container">
+              <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 style="margin-bottom: 5px;">Education</h3>
+              <ul>
+                <li>B.Sc.(Hons) in Information Systems | <span style="color: rgb(85, 85, 85);">University of Colombo School of Computing</span> </li>
+                <li>Completed upto Management Level (2 Levels) of <span style="color: rgb(85, 85, 85);">CIMA</span></li>
+              </ul>   
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3 style="margin-bottom: 5px;">Experience</h3>
+              <ul>
+                <li>Farmoid Robotech(PVT)LTD |<span style="color: rgb(85, 85, 85);"> UI/UX Designer Intern</span> [3 months] </li>
+                <li>WSO2 Inc | <span style="color: rgb(85, 85, 85);">UI/UX Engineering Intern</span> [6 months]</li>
+              </ul>  
+            </div>
+            </div>
+            </div>
+        </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section style="margin-top: 300px;position: relative;left: 100px;top: 100px;" id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="bento-grid">
+        <div class="details-container color-container long" style="width: 250px;position: relative;left: -100px;height: 500px;">
+          <div class="article-container">
+            <img
+              src="./assets/safestride.png"
+              alt="Safestride"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Safe Stride</h2>
+          <p style="padding-bottom: 15px;">
+            Introducing our ultimate Personal Safety Companion app. With GPS tracking, emergency alerts, and instant contact with loved ones or emergency services. Plus, easily book taxis, access public transport info, and optimize routes for walking or driving
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.behance.net/gallery/196686717/Safe-Stride'"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container short" style="width: 250px;position: relative;left: -98px;height: 550px;">
+          <div class="article-container">
+            <img
+              src="./assets/room review.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Room Revive</h2>
+          <p style="padding-bottom: 15px;">
+            Introducing our cutting-edge Interior Design App! Redefine your living space effortlessly with our intuitive platform. Scan your room or select areas for personalized design suggestions. Access curated products from leading retailers for seamless shopping. Design your ideal space with ease!
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.behance.net/gallery/198934909/Discover-Perfect-Interiors-using-AI'"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container short" style="width: 250px;position: relative;left: -98px;height: 550px;">
+          <div class="article-container">
+            <img
+              src="./assets/happy tails.png"
+              alt="happy tails"
+              class="project-img"  style="height: 200px;border-radius: 15px;"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Happy Tails</h2>
+          <p style="padding-bottom: 15px;">
+             This comprehensive pet care system was designed to cater to the diverse needs of pet owners, providing a one-stop platform for pet medical appointments, boarding houses, an online pet products store, and grooming services. 
+          </p>
+          <div class="btn-container">
+           
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/pasinduchathumadu/3_rd_year_project'"
+            >
+            Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container bottom" style="width: 580px;position: relative;left: -98px;top: 0px;">
+          <h2 class="experience-sub-title project-title">Elderly Network Care System</h2>
+          <p style="padding-bottom: 15px;">
+            The Elderly Network Care System – a compassionate platform built with React and Material-UI, connecting elderly individuals with dedicated caretakers.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/GithmiNiseka/Elderly-Network'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container short" style="width: 250px;position: relative;left: -98px;height: 270px;top: -330px;">
+          
+          <h2 class="experience-sub-title project-title" style="position: relative;top:-20px;">Community Site</h2>
+          <p style="position: relative;top:-40px;"> Designed community pages for the Farmoid Robotech app, enabling farmers to connect and stay updated with the latest agricultural news and events.</p>
+          <div class="btn-container">
+           
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.behance.net/gallery/183815683/Community-Pages'"
+           style="position: relative; top:-30px;" >
+             View
+            </button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    <section id="contact" style="position: relative;left: 100px; top:-50px;">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:githmidesilva22@gmail.com">githmidesilva22@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/githmi-de-silva-802084222/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container" style="position: relative;left: 100px;">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+          
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
